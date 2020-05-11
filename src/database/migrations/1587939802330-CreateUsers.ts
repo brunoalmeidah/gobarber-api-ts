@@ -32,9 +32,19 @@ export default class CreateUsers1587939802330 implements MigrationInterface {
             default: 'now()',
           },
           {
+            name: 'created_by',
+            type: 'varchar',
+            isNullable: true,
+          },
+          {
             name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
+          },
+          {
+            name: 'updated_by',
+            type: 'varchar',
+            isNullable: true,
           },
         ],
       }),
